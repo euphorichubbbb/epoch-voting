@@ -1,11 +1,49 @@
 <html>
     <head>
-        <title>Epoch Shitty Voting</title>
-        <script src="login.js">
-        </script>
-        <link href="login.css" type="stylesheet">
-    </head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Add Teams</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <link href="login.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
     <body>
+      <video id="myVideo" autoplay loop muted>
+        <source src="Untitled design (5).mp4" type="video/mp4">
+        </video>
+          
+        <div id="content">
+          <div id="login_div" class="main_div">
+            <h3>
+                <center>Team Login Authentication</center>
+            </h3>
+            <input type="email" placeholder="Team Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+    
+        <button onclick="login()">Login</button>
+      </div>
+      <div id="user_div" class="loggedin_div">
+        <h3><center>Team Login successful..</center></h3>
+        <button onclick="logout()">Logout</button>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
+    <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyAUBab5X6vzrzFi1OPPP9Q-rf3X8NQxFe4",
+        authDomain: "login-auth-b0981.firebaseapp.com",
+        projectId: "login-auth-b0981",
+        storageBucket: "login-auth-b0981.appspot.com",
+        messagingSenderId: "359711758845",
+        appId: "1:359711758845:web:022e9e8edd9d9e16096194",
+        measurementId: "G-GY4QJ29CJ9"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="login.js"></script>
+    </div>
     </body>
-</html>
+    </html>
